@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        function NumberOfSeconds (hours,minutes)
+        {
+
+            var s = (((hours * 3600) + (minutes * 60)));
+            document.getElementById('answer').value = s;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="hoursTxt" />
+    <input type="text" id="minutesTxt"/>
+    <input type="Button" id="button" value="Number of Seconds" onclick="NumberOfSeconds(document.getElementById('hoursTxt').value,document.getElementById('minutesTxt').value)";/>
+    <br />
+    <input type="text" style="border:none" id="answer" />
+
+</body>
+</html>
